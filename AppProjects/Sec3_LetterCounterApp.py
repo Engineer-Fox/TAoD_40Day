@@ -16,3 +16,8 @@ print(f'Thank you for picking {letter_of_choice}, {name}!  I will tell you how m
 #remember the METHOD .count !!!!! 
 letter_count = message.count(letter_of_choice)
 print(f'The letter {letter_of_choice} appeared {letter_count} times!')
+
+word_of_choice = input('Please enter the word you would like to search for: ')
+
+word_count = message.count(word_of_choice)
+print(f'The word "{word_of_choice}", appeared {word_count} times!')
