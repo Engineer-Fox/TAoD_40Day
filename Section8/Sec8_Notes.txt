@@ -1,0 +1,33 @@
+Notes for Section 8
+
+Built in functions so far:
+    print()
+    type()
+    str()
+    int()
+    float()
+    input()
+    round()
+    sourted() #new
+    len() #new
+
+Methods:
+    Strings:
+        .upper()
+        .lower()
+        .title()
+        .strip()
+        .count()
+    
+    Lists: #new
+        .append()
+        .insert()
+        .pop()
+        .remove()
+        .sort()
+        .reverse()
+
+External Libraries:
+    math
+    datetime
+    
