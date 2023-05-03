@@ -7,3 +7,5 @@ for num in numbers:
 print('\n slicing!')
 for num in numbers[0:5]:
     print(num)
+
+#left here on 02.05.2023
