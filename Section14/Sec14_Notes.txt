@@ -1,0 +1,77 @@
+For loops notes
+
+Loop through list of elements; use range function, list function to turn ranges into lists; list function to turn string into list
+
+.join method; next for loops for program structure.
+
+Copy a list and creating variables that point to a list
+
+
+Data Types:
+    - Strings: a series of characters
+    - Integers: whole numbers
+    - Floats: demical numbers
+    - Lists: mutuable collection
+    - Tuples: An immutable collection
+    - Ranges: A sequence of Integers
+    
+
+
+
+Control Flow:
+    - For loops
+
+
+Operators:
+    - Assignment operators
+        = Assignment
+        += Compound Assignment
+        -= Compound Assignment
+        + Concatenation (strings)
+
+    -Algebraic Operators
+        + Addition (ints and floats)
+        - Subtraction 
+        * Multiplication
+        / Division
+        ** Exponentiation
+
+
+Built In Functions:
+    Print()
+    Type
+    str
+    int
+    float()
+    input()
+    round()
+    sorted()
+    len()
+
+        range()
+        list()
+        min()
+        max()
+        sum()
+        zip()
+        bin()
+        hex()
+
+Methods:
+    STRINGS 
+    .upper()
+    .lower()
+    .title()
+    .strip()
+    .count()
+    .join()
+                LISTS
+                .append()
+                .insert()
+                .pop()
+                .remove()
+                .sort()
+                .reverse()
+                .copy()
+
+
