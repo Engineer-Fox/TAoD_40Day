@@ -7,3 +7,6 @@ for name in names:
 
 for i in range(len(names)):
     print(names[i]+': '+str(numbers[i]))
+
+for name, number in zip(names, numbers):
+    print(name.title()+':'+str(number))
