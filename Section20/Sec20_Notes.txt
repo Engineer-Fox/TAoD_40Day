@@ -1,0 +1,60 @@
+Unit Overview
+    - Define Boolean values
+    - Use various comparison membership and logic operators
+    - if/else statements
+    - Nesting if/elif/else chains for dynamic programs
+    - Interpret blank lists or strings as Boolean values
+    - Use logic operators to create more robust tests
+    - Import random module to randomly generate values
+
+
+
+Data Types:
+    - Existing
+        + strings
+        + integers
+        + floats
+        + lists
+        + tuples
+        + ranges
+    - New
+        + Booleans
+
+
+Control Flow
+    - For Loops
+    - If statements
+    - If/else statements
+    - if.elif/else statements
+    - Break
+    - Pass
+    - Continue
+
+Existing Operators
+    - Assignment Operators
+        = Assignment
+        += Compound Assignment
+        -= Compound Assignment
+        + Concatination (strings)
+    - Algebraic
+        + addition
+        - subtraction
+        * multiplication
+        / division
+        ** exponential
+
+New Operators
+    - Logical Operators 
+        + and
+        + or
+        + Not
+    - Membership Operators
+        + In
+        + not in 
+    - Comparison Operators
+        ==
+        !=
+        < less than
+        > greater than 
+        <= less than or equal to
+        >= greater than or equal to
