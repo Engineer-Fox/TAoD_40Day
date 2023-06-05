@@ -16,7 +16,7 @@ if age >= 21:
     print()
     print('Have yourself a LEGAL drink!')
 else:
-    print(n)
+    print(age)
     print('No drinky-poo for you!')
 
 first = input('\nWhat is your first name?: ')
