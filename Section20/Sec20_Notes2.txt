@@ -1,0 +1,23 @@
+Methods
+    - strings
+        .upper()
+        .lower()
+        .title()
+        .strip()
+        .count()
+        .join()
+        .startswith()
+    - lists
+        .append()
+        .insert()
+        .pop()
+        .remove()
+        .sort()
+        .reverse()
+        .copy()
+
+External Libraries
+    - math
+    - datetime
+    - cmath
+    - random
