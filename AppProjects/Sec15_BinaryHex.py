@@ -33,4 +33,5 @@ print('-----------------------------------')
 for d,b,h in zip(decimal,binary,hexadecimal):
     print(str(d)+'-----'+str(b)+'-----'+str(h))
 
+
 print('\n The entire list has been output to your screen!')
