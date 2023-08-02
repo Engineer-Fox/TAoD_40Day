@@ -1,1 +1,46 @@
 Define goals for Section 24, Dictionaries
+Key value pairs
+
+Collection of associated key value pairs
+
+Data Types Covered Thus Far:
+    Strings
+    Integers
+    Floats
+    lists
+    Tuples
+    Ranges
+    Booleans
+    Dictionaries
+
+Built In Functions
+    print   range
+    Type    list
+    str     min
+    int     max
+    Float   sum
+    input   zip
+    round   bin
+    sorted  hex
+    len     set 
+ 
+Methods
+
+    Strings     lists       Dictionaries
+    .upper      .append     .items
+    .lower      .insert     .keys 
+    .title      .pop        .values 
+    .strip      .remove     .most_common
+    .count      .sort       
+    .join       .reverse    
+    .startswith .copy
+    .replace    .index
+
+
+External Libraries
+    math
+    datetime
+    cmath
+    random
+    collections
+    
