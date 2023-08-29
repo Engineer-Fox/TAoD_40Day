@@ -23,6 +23,6 @@ for name in fav_colors.keys():
     print(name.title() + ', Thank you for taking the survey!')
 if 'brooke' not in fav_colors.keys():
     print('Brooke, you should take the Survey!')
-
-for value in fav_colors.values():
+print('\nThe colors voted on were: ')
+for value in set(fav_colors.values()):
     print(value)
