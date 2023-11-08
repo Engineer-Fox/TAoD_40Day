@@ -1,0 +1,39 @@
+Over 20 Built In Python Functions:
+
+    print()
+
+    type()
+
+    str()
+
+    int()
+
+    float()
+
+    input()
+
+    round()
+
+    sorted()
+
+    len()
+
+    range()
+
+    list()
+
+    min()
+
+    max()
+
+    sum()
+
+    zip()
+
+    bin()
+
+    hex()
+
+    set()
+
+    bool()
