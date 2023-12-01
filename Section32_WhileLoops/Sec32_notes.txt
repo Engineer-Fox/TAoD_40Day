@@ -1,0 +1,5 @@
+break placed will force the loop to end
+
+modulo is remainder %
+ie. 4 % 2 = 0 since there is no remainder 
+ie. 8 % 3 = 2 since the quotient is not a whole number 
