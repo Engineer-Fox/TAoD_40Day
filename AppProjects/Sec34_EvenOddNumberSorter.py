@@ -23,6 +23,15 @@ while running:
         else:
             even.append(i)
     print(f'The following {str(len(even))} numbers are even:')
+    for i in even:
+        print(f'\t{i}')
     print(even)
     print(f'The following {str(len(odd))} numbers are odd:')
+    for i in odd:
+        print(f'\t{i}')
     print(odd)
+    continue_going = input('Would you like to continue? (y/n):  ').lower().strip()
+    if continue_going != 'y':
+        # could be either break or running = False to end the while loop
+        break
+print('All done!')
