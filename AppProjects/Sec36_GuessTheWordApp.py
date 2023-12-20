@@ -53,9 +53,9 @@ while playing:
                 break
     keepplaying = input('Would you like to keep playing? (y/n):  ').lower().strip()
     if keepplaying != 'y':
-        print('Thank you for playing!  Goodbye!')
+        print('\t\t------------------Thank you for playing!  Goodbye!----------------------------')
         break
     else:
-        print('Okay!  Here we go again!')
+        print('\n******************Okay!  Here we go again!************************\n')
         continue
 
