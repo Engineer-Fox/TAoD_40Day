@@ -1,4 +1,5 @@
 import math
+import random
 print('This is the Sec37_PowerBallSim app!')
 
 print('-------------------------------------- Power-Ball Simulator ----------------------------------------')
@@ -12,8 +13,12 @@ print('-------------------------------------- Power-Ball Simulator -------------
 
 powering = True
 while powering:
-    whiteball_count = int(input('How many white balls would you like to draw from for the 5 winning numbers?: '))
-    redball_count = int(input('How many red balls would you like to draw from for the 2 winning numbers?: '))
+    whiteball_count = int(input('How many white balls would you like to draw from for the 5 winning numbers? (Normally there are 69): '))
+    if whiteball_count <5:
+        whiteball_count = 5
+    redball_count = int(input('How many red balls would you like to draw from for the 2 winning numbers? (Normally there are 26): '))
+    if redball_count <2:
+        redball_count = 2
     maxred = 69
     maxwhite = 26
     totalmax = maxred+maxwhite
@@ -24,3 +29,29 @@ while powering:
     print('\nYou have a 1 in ', totalodds,'chance of winning this lottery.  Good luck!')
 
     break
+# Get ticket interval
+ticketInterval = int(input('Puchase tickets in what interval?:  '))
+winningwhite_numbers = []
+while len(winningwhite_numbers)<5:
+    number = random.randint(1, whiteball_count)
+    if number not in winningwhite_numbers:
+        winningwhite_numbers.append(number)
+
+winningred_numbers = []
+while len(winningred_numbers)<2:
+    number = random.randint(1, redball_count)
+    if number not in winningred_numbers:
+        winningred_numbers.append(number)
+winning_numbers = winningred_numbers + winningwhite_numbers
+winning_numbers.sort()
+# winning_numbers= winning_numbers.append(winningwhite_numbers)
+# winning_numbers.sort()
+print(winning_numbers)
+
+# Starting to track tickets purchased and winning tickets
+boughttickets = 0
+keepbuying = True
+soldtickets = []
+# set while loop to track winning numbers in tickets sold
+while winning_numbers not in soldtickets and keepbuying == True:
+    test = 1
