@@ -55,3 +55,5 @@ soldtickets = []
 # set while loop to track winning numbers in tickets sold
 while winning_numbers not in soldtickets and keepbuying == True:
     test = 1
+
+    test = 2
