@@ -54,6 +54,32 @@ keepbuying = True
 soldtickets = []
 # set while loop to track winning numbers in tickets sold
 while winning_numbers not in soldtickets and keepbuying == True:
-    test = 1
-
-    test = 2
+    lottery_numbers = []
+    while len(lottery_numbers)<5:
+        number = random.randint(1, whiteball_count)
+        if number not in lottery_numbers:
+            lottery_numbers.append(number)
+    lottery_numbers.sort()
+    number = random.randint(1,redball_count)
+    lottery_numbers.append(number)
+    # This currenty ticket has not been sold
+    if lottery_numbers not in soldtickets:
+        boughttickets += 1
+        soldtickets.append(lottery_numbers)
+        print(lottery_numbers)
+    else:
+        print('Losing ticket generated; disregard...')
+    
+    if boughttickets % ticketInterval == 0:
+        print(str(boughttickets), 'tickets purchased so far with no winners...')
+        choice = input('\nKeep purchasing tickets?: (Y/N)').lower().strip()
+        if choice != 'y':
+            keepbuying = False
+if lottery_numbers == winning_numbers:
+    print('\nWinning ticket numbers:  ', end='')
+    for number in lottery_numbers:
+        print(str(number),end='')
+    print('\nPurchased a total of',str(boughttickets),' tickets.')
+else:
+    print('\nYou bought ', str(boughttickets),' tickets.')
+    print('Better luck next time!')
