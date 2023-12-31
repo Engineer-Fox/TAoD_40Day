@@ -1,0 +1,15 @@
+Functions
+defining our own functions to make programs more efficient
+Def statement for functions
+Parameters vs arguments
+Introducing def statement and return statement
+No new built in functions
+No new methods
+Adding matplotlib library
+
+Apps will be 
+Python dice App
+Python calc App
+bank deposit and withdraw App
+Head to head tic tac toe App
+loan calc App
