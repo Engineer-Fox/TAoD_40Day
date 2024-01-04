@@ -2,25 +2,21 @@
 from matplotlib import pyplot
 
 def get_loan_info():
-    """Get the basic information of a loan and store it in a dictionary"""
-    #Create a blank dict to represent a loan
+    """Get the info on the loan from the user"""
+    #Create a blank dict
     loan = {}
-
-    #Get user input for the categories of the loan
-    loan['principal'] = float(input("Enter the loan amount: "))
+    #Get user input for the loan
+    loan['principal'] = float(input("Enter the loan amount (USD): "))
     loan['rate'] = float(input("Enter the interest rate %: "))/100
-    loan['monthly payment'] = float(input("Enter the desired monthly payment amount: "))
+    loan['monthly payment'] = float(input("Enter the desired monthly payment amount (USD): "))
     loan['money paid'] = 0
-    
     return loan
-
 
 def show_loan_info(loan, number):
     """Display the current loan status"""
     print("\n----Loan information after " + str(number) + " months----")
     for key, value in loan.items():
         print(key.title() + ": " + str(value))
-
 
 def collect_interest(loan):
     """Update loan for interest per month"""
@@ -80,6 +76,7 @@ print("Welcome to the Loan Calculator App\n")
 
 #Initialize variables
 month_number = 0
+# Build a loan for the program
 my_loan = get_loan_info()
 starting_principal = my_loan['principal']
 data_to_plot = []
@@ -101,7 +98,8 @@ while my_loan['principal'] > 0:
     make_monthly_payment(my_loan)
     data_to_plot.append((month_number, my_loan['principal']))
     show_loan_info(my_loan, month_number)
-
+    
+print('\nThank you for waiting.  Here is your info:  ')
 #The loan is either paid off in full or it can NEVER be paid off...
 #The loan was paid off in full
 if my_loan['principal'] <= 0:
